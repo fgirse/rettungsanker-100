@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.headingC {
+
+  -webkit-text-stroke-width: 1px;
+
+  -webkit-text-stroke-color: orange;
+
+  font-family: "Architects Daughter";
+
+}
+
+
+.headingD {
+
+  -webkit-text-stroke-width: 0.66px;
+
+  -webkit-text-stroke-color: #595959;
+
+  font-family: "Architects Daughter";
+
+  font-weight: extrabold;
+
+}
+
+
+.headingE {
+
+  -webkit-text-stroke-width: 3.99px;
+
+  -webkit-text-stroke-color: #595959;
+
+  font-family: "Bowlby One SC";
+
+  font-weight: extrabold;
+
+}
+
+
+.headingF {
+
+  -webkit-text-stroke-width: 3.66px;
+
+  -webkit-text-stroke-color: #fffffc;
+
+  font-family: "Bowlby One SC";
+
+  font-weight: extrabold;
+
+}
+
+.headingA {
+
+  -webkit-text-stroke-width: 2.33px;
+
+  -webkit-text-stroke-color: #ffffff;
+
+  font-family: "Bowlby One SC";
+
+}
+
+.headingG {
+
+  -webkit-text-stroke-width: 0.33px;
+
+  -webkit-text-stroke-color: #ffffff;
+
+  font-family: "Bowlby One SC";
+
+}
+
+
+.headingB {
+
+  -webkit-text-stroke-width: 1.33px;
+
+  -webkit-text-stroke-color: #ffcc00;
+
+  font-family: "Architects Daughter";
+
+}
+
+
+.headingC {
+
+  -webkit-text-stroke-width: 1px;
+
+  -webkit-text-stroke-color: orange;
+
+  font-family: "Architects Daughter";
+
+}
+
+
+.headingD {
+
+  -webkit-text-stroke-width: 0.66px;
+
+  -webkit-text-stroke-color: #595959;
+
+  font-family: "Architects Daughter";
+
+  font-weight: extrabold;
+
+}
+
+
+.headingE {
+
+  -webkit-text-stroke-width: 3.99px;
+
+  -webkit-text-stroke-color: #595959;
+
+  font-family: "Bowlby One SC";
+
+  font-weight: extrabold;
+
+}
+
+
+.headingF {
+
+  -webkit-text-stroke-width: 3.66px;
+
+  -webkit-text-stroke-color: #fffffc;
+
+  font-family: "Bowlby One SC";
+}
+
+
+
+
+
+
+
+
+
+.bg-hero{
+
+
+  background-image: linear-gradient(
+
+
+    to bottom,
+
+
+    rgba(25, 36, 45, 1),
+
+
+    rgba(0, 0, 255, 0)
+
+
+, rgba(25,36,45,1)  ), url("/lighthouse.png");
+
+
+  background-size:100vw 100vh;
+
+
+  background-repeat: no repeat;
+}
+
+
+
+@media (min-width: 890px) {
+
+
+	.bg-hero{
+
+
+    background-image: linear-gradient(
+
+
+      to bottom,
+
+
+      rgba(25, 36, 45, 1),
+
+
+      rgba(0, 0, 255, 0)
+
+
+  , rgba(25,36,45,1)  ), url("/5566.svg");
+
+
+  }
+
+
+}
