@@ -1,4 +1,4 @@
-/* trunk-ignore-all(prettier) */
+
 'use client';
 import { motion, type Variants } from 'framer-motion';
 import * as styles from '../../styles/styles';
