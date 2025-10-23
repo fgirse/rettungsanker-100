@@ -1,0 +1,147 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+.Tooltip-Wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.Tooltip-Tip {
+  position: absolute;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 1;
+  z-index: 100;
+  white-space: nowrap;
+}
+
+.Tooltip-Tip.top {
+  top: -12px;
+  transform: translateX(-50%) translateY(-100%);
+}
+
+.Tooltip-Tip.bottom {
+  bottom: -12px;
+  transform: translateX(-50%) translateY(100%);
+}
+
+.Tooltip-Tip.left {
+  left: 0;
+  top: 50%;
+  transform: translateX(-100%) translateY(-50%);
+}
+
+.Tooltip-Tip.right {
+  right: 0;
+  top: 50%;
+  transform: translateX(100%) translateY(-50%);
+}
+
+/* Arrow styles */
+.Tooltip-Tip::before {
+  content: " ";
+  left: 50%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-width: 6px;
+  margin-left: calc(6px * -1);
+}
+
+.Tooltip-Tip.top::before {
+  bottom: calc(6px * -1);
+  border-top-color: rgba(0, 0, 0, 0.8);
+}
+
+.Tooltip-Tip.bottom::before {
+  top: calc(6px * -1);
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+
+.Tooltip-Tip.left::before {
+  right: calc(6px * -1);
+  top: 50%;
+  transform: translateY(-50%);
+  border-left-color: rgba(0, 0, 0, 0.8);
+}
+
+.Tooltip-Tip.right::before {
+  left: calc(6px * -1);
+  top: 50%;
+  transform: translateY(-50%);
+  border-right-color: rgba(0, 0, 0, 0.8);
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3.9%;
+  --primary: 0 0% 9%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 96.1%;
+  --secondary-foreground: 0 0% 9%;
+  --muted: 0 0% 96.1%;
+  --muted-foreground: 0 0% 45.1%;
+  --accent: 0 0% 96.1%;
+  --accent-foreground: 0 0% 9%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 89.1%;
+  --input: 0 0% 89.1%;
+  --ring: 0 0% 3.9%;
+  --chart-1: 220 70% 50%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 30 80% 55%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 340 75% 55%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: rgb(229 231 235);
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}

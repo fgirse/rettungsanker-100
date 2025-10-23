@@ -1,20 +1,27 @@
 'use client';
 
-import React, { useState } from 'react';
 import '../styles/tooltip.css';
+import React, { useState, useRef } from 'react';
 
-const Tooltip = (props) => {
-  let timeout;
-  const [active, setActive] = useState(false);
+interface TooltipProps {
+  children: React.ReactNode;
+  content: React.ReactNode;
+  delay?: number;
+  direction?: 'top' | 'bottom' | 'left' | 'right';
+}
 
-  const showTip = () => {
-    timeout = setTimeout(() => {
+const Tooltip: React.FC<TooltipProps> = (props) => {
+  const timeout = useRef<NodeJS.Timeout | undefined>(undefined);
+  const [active, setActive] = useState<boolean>(false);
+
+  const showTip = (): void => {
+    timeout.current = setTimeout(() => {
       setActive(true);
     }, props.delay || 400);
   };
 
-  const hideTip = () => {
-    clearInterval(timeout);
+  const hideTip = (): void => {
+    clearTimeout(timeout.current);
     setActive(false);
   };
 

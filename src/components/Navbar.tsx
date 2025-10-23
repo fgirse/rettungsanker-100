@@ -19,7 +19,7 @@ function classNames(...classes: (string | boolean | undefined | null)[]): string
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="relative bg-slate-800 md:bg-[url('/wood4.svg')] bg-cover shadow-lg">
+    <Disclosure as="nav" className="relative bg-slate-800 md:bg-[url('/wood3.svg')] bg-cover shadow-lg">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-24 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center  sm:hidden">
@@ -34,8 +34,8 @@ export default function Navbar() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
               <Image
-                width={200}
-                height={100}
+                width={100}
+                height={80}
                 alt="Your Company"
                 src={LogoNeu}
                 className="h-8 w-auto"
@@ -136,8 +136,8 @@ export default function Navbar() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-medium',
+                item.current ? 'border-b-2 border-gray-200 text-white hover:bg-amber-500' : 'border-b-2 border-gray-200 text-gray-100 hover:bg-amber-500  hover:text-white',
+                'block  px-3 py-2 text-base font-medium',
               )}
             >
               {item.name}

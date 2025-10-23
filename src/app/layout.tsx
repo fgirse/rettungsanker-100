@@ -3,6 +3,7 @@ import { Bowlby_One_SC } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Infobar from "../components/Infobar";
+import Footer from "../components/Footer";
 
 const bowlbyOneSC = Bowlby_One_SC({
   weight: "400",
@@ -23,9 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={bowlbyOneSC.variable}>
       <body className={`${bowlbyOneSC.className} antialiased`}>
-<Navbar />
-<Infobar />
-        {children}</body>
+        <Navbar />
+        <Infobar />
+        {children}
+      </body>
     </html>
   );
 }
