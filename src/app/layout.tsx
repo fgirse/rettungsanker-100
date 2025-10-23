@@ -33,8 +33,8 @@ export default function RootLayout({
       <body className={`${architectsDaughter.className} antialiased`}>
 <Navbar />
 <Infobar />
-<main className="w-[100vw] flex flex-col items-center justify-between">{children}</main>
-        {children}</body>
+<main className="w-screen min-h-screen flex flex-col items-center justify-between bg-amber-100">{children}</main>
+        </body>
     </html>
   );
 }
