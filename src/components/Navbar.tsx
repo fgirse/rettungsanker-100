@@ -136,7 +136,7 @@ export default function Navbar() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'border-b-2 border-gray-200 text-white hover:bg-amber-500' : 'border-b-2 border-gray-200 text-gray-100 hover:bg-amber-500  hover:text-white',
+                item.current ? 'font-bowlby uppercase font-extrabold border-b-2 border-gray-200 text-white hover:bg-amber-500' : 'uppercase font-bowlby border-b-2 border-gray-200 text-gray-100 hover:bg-amber-500  hover:text-white',
                 'block  px-3 py-2 text-base font-medium',
               )}
             >

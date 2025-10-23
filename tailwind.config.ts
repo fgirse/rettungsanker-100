@@ -13,6 +13,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         bowlby: ['var(--font-bowlbyOneSC)', 'Arial', 'sans-serif'],
+        architects: ['var(--font-architectsDaughter)', 'Arial', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
