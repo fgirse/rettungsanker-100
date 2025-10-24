@@ -3,7 +3,7 @@ import { Bowlby_One_SC, Architects_Daughter } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navbar";
 import InfoBar from"../components/Infobar";
-import Footer from"../components/Footer";
+
 
 const bowlbyOneSC = Bowlby_One_SC({
   weight: "400",
