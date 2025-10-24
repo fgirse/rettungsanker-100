@@ -87,7 +87,7 @@ const Footer = () => {
                     className="w-full min-w-0 appearance-none rounded-md border border-transparent bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:border-white focus:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                     placeholder="Enter your email"
                   />
-                  <div className="mb-[3-vh] mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                  <div className="mb-[3-vh] mt-3 rounded-md sm:mt-0 sm:ml-3 sm:shrink-0">
                     <div className="example-wrapper">
                       <SimpleTooltip
                         content="fordere den Newsletter an !!!"

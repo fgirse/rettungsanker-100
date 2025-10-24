@@ -5,3 +5,14 @@ export const xPaddings = "px-4 sm:px-8 lg:px-1";
 // Add other style utilities as needed
 export const flexCenter = "flex items-center justify-center";
 export const flexBetween = "flex items-center justify-between";
+
+// Default export for backward compatibility
+const styles = {
+  yPaddings,
+  innerWidth,
+  xPaddings,
+  flexCenter,
+  flexBetween,
+};
+
+export default styles;

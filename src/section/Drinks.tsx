@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import styles from '../styles';
-import { staggerContainer } from '../utils/motion';
+import styles from '../../styles/styles';
+import { staggerContainer } from '../../utils/motion';
 import { TypingText } from '../components/CustomTexts'
 import Modale05 from "../components/Modale/Modale05";
 import Modale06 from "../components/Modale/Modale06";
@@ -12,15 +12,15 @@ import Modale09 from "../components/Modale/Modale09";
 import Modale10 from "../components/Modale/Modale10";
 
 const Drinks = () => (
-  <section id="section-drinks" className={`${styles.paddings} relative z-10`}>
+  <section id="section-drinks" className={`${styles.yPaddings} relative z-10`}>
     <motion.div
-      variants={staggerContainer}
+      variants={staggerContainer(0.1, 0.1)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText className="text-yellow-600 headingA " title="| Drinks & Snacks" textStyles="text-center" />
+      <TypingText title="| Drinks & Snacks" textStyles="text-center text-yellow-600 headingA" />
       <h1 className='mt-3 text-center headingA text-yellow-600 text-4xl md:text-5xl lg:text-7xl'>Drinks & Snacks</h1>
       {/*<TitleText title={<>Drinks and Snacks</>} textStyles="text-yellow text-center" />*/}
     <h1 className="mt-24 mb-12 text-center text-white text-2xl lg:text-6xl">Wähle eines der Getränke-Snack Menues in dem Du eine der Illustrationen anclickst </h1>
@@ -30,37 +30,37 @@ const Drinks = () => (
       <section className="grid-container rounded-2xl bg-slate-600/20">
           <div className='col hover:border-8 hover:border-red-600 hover:rounded-2xl hover:bg-orange-200/10'>
               <figure className='grid-item'>
-                <Modale05 className="modale"/>
+                <Modale05 />
               </figure>
           </div>
           <div className='col hover:border-8 hover:border-red-700 hover:rounded-2xl hover:bg-orange-200/10'>
               <figure className='grid-item'>
-                <Modale06 className="modale"/>
+                <Modale06 />
               </figure>
           </div>
          <div className='col hover:border-8 hover:border-red-900 hover:rounded-2xl hover:bg-orange-200/10 '>
               <figure className='grid-item'>
-                <Modale07 className="modale"/>
+                <Modale07 />
               </figure>
           </div>
           <div className='col hover:border-8 hover:border-red-900 hover:rounded-2xl hover:bg-orange-200/10 '>
               <figure className='grid-item'>
-                <Modale08 className="modale"/>
+                <Modale08 />
               </figure>
           </div>
           <div className='col hover:border-8 hover:border-red-700 hover:rounded-2xl hover:bg-orange-200/10'>
               <figure className='grid-item'>
-                <Modale09 className="modale"/>
+                <Modale09 />
               </figure>
           </div>
           <div className='col hover:border-8 hover:border-red-800 hover:rounded-2xl hover:bg-orange-200/10'>
               <figure className='grid-item'>
-                <Modale10 className="modale"/>
+                <Modale10 />
               </figure>
           </div>
 
       </section>
-      
+
     </motion.div>
   </section>
 );

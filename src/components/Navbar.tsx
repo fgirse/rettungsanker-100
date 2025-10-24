@@ -5,6 +5,7 @@ import LogoNeu from '../../public/LogoNeu.png';
 import Bulleye from '../../public/Bulleye.svg';
 
 
+
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'über uns', href: '/about', current: false },
@@ -21,7 +22,7 @@ export default function Navbar() {
   return (
     <Disclosure as="nav" className="relative bg-slate-800 md:bg-[url('/wood3.svg')] bg-cover shadow-lg">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-24 items-center justify-between">
+        <div className="relative flex h-28 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center  sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-amber-500 hover:text-red-500 focus:outline-2 focus:-outline-offset-1 focus:bg-amber-500">
@@ -136,7 +137,7 @@ export default function Navbar() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'font-bowlby uppercase font-extrabold border-b-2 border-gray-200 text-white hover:bg-amber-500' : 'uppercase font-bowlby border-b-2 border-gray-200 text-gray-100 hover:bg-amber-500  hover:text-white',
+                item.current ? 'font-bowlby uppercase font-extrabold border-b-2 border-gray-200 text-white hover:bg-amber-500 text-4xl' : 'uppercase text-9xl font-bowlby border-b-2 border-gray-200 text-gray-100 hover:bg-amber-500  hover:text-white',
                 'block  px-3 py-2 text-base font-medium',
               )}
             >

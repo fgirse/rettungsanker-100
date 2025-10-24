@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Bowlby_One_SC, Architects_Daughter } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import Infobar from "../components/Infobar";
-import { arch } from "os";
+import Navigation from "../components/Navbar";
+import InfoBar from"../components/Infobar";
+import Footer from"../components/Footer";
 
 const bowlbyOneSC = Bowlby_One_SC({
   weight: "400",
@@ -31,9 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bowlbyOneSC.variable} ${architectsDaughter.variable}`}>
       <body className={`${architectsDaughter.className} antialiased`}>
-<Navbar />
-<Infobar />
-<main className="w-screen min-h-screen flex flex-col items-center justify-between bg-amber-100">{children}</main>
+        <Navigation/>
+        <InfoBar/>
+
+<main className=" bg-stone-800 flex flex-col items-center justify-between">{children}</main>
         </body>
     </html>
   );
