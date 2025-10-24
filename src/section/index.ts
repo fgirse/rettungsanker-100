@@ -4,7 +4,7 @@ import Philosophy from './Philosophy';
 import Event from './Event';
 import Sportarena from './Sportarena';
 import World from './World';
-import Drinks from './Drinks.tsx';
+import Drinks from './Drinks';
 import Team from './Team';
 import Wohin from './Wohin';
 
