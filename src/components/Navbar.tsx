@@ -20,7 +20,7 @@ function classNames(...classes: (string | boolean | undefined | null)[]): string
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="relative bg-slate-800 md:bg-[url('/wood3.svg')] bg-cover shadow-lg">
+    <Disclosure as="nav" className="relative bg-slate-800 md:bg-[url('/wood3.svg')] md:bg-cover shadow-lg">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-28 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center  sm:hidden">

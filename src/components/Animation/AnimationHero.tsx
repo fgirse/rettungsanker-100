@@ -42,7 +42,7 @@ export default function AnimatedLogo() {
 
   return (
     <div className="flex flex-col items-center gap-8">
-      <div ref={logoRef} className="relative w-64 h-64">
+      <div ref={logoRef} className="relative w-64 h-64 lg:hidden">
         <Image
           src={LogoNeu}
           alt="Rettungsanker Logo"
@@ -54,13 +54,13 @@ export default function AnimatedLogo() {
       <div className="flex flex-col gap-1 justify-center items-center">
         <h1
           ref={textRef}
-          className="font-bowwlby text-amber-50 headingE text-shadow-lg text-[40vw] md:text-[20vw] lg:text-[25vw] text-center tracking-wide"
+          className="mt-[12vh] font-bowwlby text-amber-50 headingE text-shadow-lg text-[40vw] md:text-[20vw] lg:text-[30vw] text-center tracking-wide"
         >
           die
         </h1>
         <h1
           ref={textRef}
-          className="-mt-[10vh] font-bowwlby headingA text-shadow-lg text-[12vw] md:text-7xl lg:text-8xl text-red-700 text-center tracking-wide"
+          className="-mt-[10vh] font-bowwlby headingA text-shadow-lg text-[12vw] md:text-7xl lg:-mt-[20vh] lg:text-[10vw] text-red-700 text-center"
         >
           kiezkeipe
         </h1>
